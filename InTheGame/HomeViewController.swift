@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import InTheGameSDK
+import InTheGameBC
 
 let exampleVideoURL = URL(string: "https://media.inthegame.io/uploads/videos/itgdemo5clips.mp4?123123")!
 

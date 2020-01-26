@@ -1,0 +1,11 @@
+framework module InTheGameBC {
+  umbrella header "InTheGameBC.h"
+
+  export *
+  module * { export * }
+}
+
+module InTheGameBC.Swift {
+    header "InTheGameBC-Swift.h"
+    requires objc
+}

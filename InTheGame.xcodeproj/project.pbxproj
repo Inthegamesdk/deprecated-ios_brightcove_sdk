@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,10 @@
 		6DACAF69239FF81D00443D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */; };
 		6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF70239FF86800443D25 /* ExampleViewController.swift */; };
 		6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF71239FF86800443D25 /* HomeViewController.swift */; };
-		6DACAF76239FF89B00443D25 /* InTheGameSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DACAF74239FF89700443D25 /* InTheGameSDK.framework */; };
-		6DACAF77239FF89B00443D25 /* InTheGameSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DACAF74239FF89700443D25 /* InTheGameSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DFBB70623D8B3CD007A3268 /* InTheGameBC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */; };
+		6DFBB70723D8B3CD007A3268 /* InTheGameBC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DFBB70923D8B666007A3268 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBB70823D8B666007A3268 /* Podfile */; };
+		F810BB8D9FC73358ECCE1DCB /* Pods_InTheGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE491A952D8F77552BE404F4 /* Pods_InTheGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6DACAF77239FF89B00443D25 /* InTheGameSDK.framework in Embed Frameworks */,
+				6DFBB70723D8B3CD007A3268 /* InTheGameBC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6DACAF59239FF81B00443D25 /* InTheGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTheGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DACAF59239FF81B00443D25 /* ITG BC Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITG BC Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DACAF5C239FF81B00443D25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DACAF63239FF81B00443D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DACAF65239FF81D00443D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,7 +42,11 @@
 		6DACAF6A239FF81D00443D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DACAF70239FF86800443D25 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		6DACAF71239FF86800443D25 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		6DACAF74239FF89700443D25 /* InTheGameSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InTheGameSDK.framework; sourceTree = "<group>"; };
+		6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InTheGameBC.framework; sourceTree = "<group>"; };
+		6DFBB70823D8B666007A3268 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CAD0035FB1136267EBC572E /* Pods-InTheGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTheGame.release.xcconfig"; path = "Target Support Files/Pods-InTheGame/Pods-InTheGame.release.xcconfig"; sourceTree = "<group>"; };
+		9D802E757AC8A721CE381802 /* Pods-InTheGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTheGame.debug.xcconfig"; path = "Target Support Files/Pods-InTheGame/Pods-InTheGame.debug.xcconfig"; sourceTree = "<group>"; };
+		CE491A952D8F77552BE404F4 /* Pods_InTheGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTheGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DACAF76239FF89B00443D25 /* InTheGameSDK.framework in Frameworks */,
+				6DFBB70623D8B3CD007A3268 /* InTheGameBC.framework in Frameworks */,
+				F810BB8D9FC73358ECCE1DCB /* Pods_InTheGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,13 +67,15 @@
 			children = (
 				6DACAF5B239FF81B00443D25 /* InTheGame */,
 				6DACAF5A239FF81B00443D25 /* Products */,
+				D276DCFC8B0973D8E931FC9F /* Pods */,
+				97587C31081C4D0C0B651E24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6DACAF5A239FF81B00443D25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DACAF59239FF81B00443D25 /* InTheGame.app */,
+				6DACAF59239FF81B00443D25 /* ITG BC Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +83,7 @@
 		6DACAF5B239FF81B00443D25 /* InTheGame */ = {
 			isa = PBXGroup;
 			children = (
+				6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */,
 				6DACAF5C239FF81B00443D25 /* AppDelegate.swift */,
 				6DACAF70239FF86800443D25 /* ExampleViewController.swift */,
 				6DACAF71239FF86800443D25 /* HomeViewController.swift */,
@@ -81,9 +91,26 @@
 				6DACAF65239FF81D00443D25 /* Assets.xcassets */,
 				6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */,
 				6DACAF6A239FF81D00443D25 /* Info.plist */,
-				6DACAF74239FF89700443D25 /* InTheGameSDK.framework */,
+				6DFBB70823D8B666007A3268 /* Podfile */,
 			);
 			path = InTheGame;
+			sourceTree = "<group>";
+		};
+		97587C31081C4D0C0B651E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE491A952D8F77552BE404F4 /* Pods_InTheGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D276DCFC8B0973D8E931FC9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D802E757AC8A721CE381802 /* Pods-InTheGame.debug.xcconfig */,
+				8CAD0035FB1136267EBC572E /* Pods-InTheGame.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,10 +120,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DACAF6D239FF81D00443D25 /* Build configuration list for PBXNativeTarget "InTheGame" */;
 			buildPhases = (
+				7F9FE5F3DF5BAC8FF0B6C061 /* [CP] Check Pods Manifest.lock */,
 				6DACAF55239FF81B00443D25 /* Sources */,
 				6DACAF56239FF81B00443D25 /* Frameworks */,
 				6DACAF57239FF81B00443D25 /* Resources */,
 				6DACAF78239FF89B00443D25 /* Embed Frameworks */,
+				EA63021ACB34CB72E59AD72D /* [CP] Copy Pods Resources */,
+				819E927F7AF56EF28111CD94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -104,7 +134,7 @@
 			);
 			name = InTheGame;
 			productName = InTheGame;
-			productReference = 6DACAF59239FF81B00443D25 /* InTheGame.app */;
+			productReference = 6DACAF59239FF81B00443D25 /* ITG BC Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,11 +177,71 @@
 			files = (
 				6DACAF69239FF81D00443D25 /* LaunchScreen.storyboard in Resources */,
 				6DACAF66239FF81D00443D25 /* Assets.xcassets in Resources */,
+				6DFBB70923D8B666007A3268 /* Podfile in Resources */,
 				6DACAF64239FF81B00443D25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F9FE5F3DF5BAC8FF0B6C061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTheGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819E927F7AF56EF28111CD94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTheGame/Pods-InTheGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTheGame/Pods-InTheGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InTheGame/Pods-InTheGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA63021ACB34CB72E59AD72D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTheGame/Pods-InTheGame-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InTheGame/Pods-InTheGame-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InTheGame/Pods-InTheGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DACAF55239FF81B00443D25 /* Sources */ = {
@@ -302,21 +392,24 @@
 		};
 		6DACAF6E239FF81D00443D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D802E757AC8A721CE381802 /* Pods-InTheGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV328K5423;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InTheGame",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = InTheGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.inthegame.InTheGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inthegame.InTheGameBCExample;
+				PRODUCT_NAME = "ITG BC Example";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,21 +417,24 @@
 		};
 		6DACAF6F239FF81D00443D25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CAD0035FB1136267EBC572E /* Pods-InTheGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV328K5423;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/InTheGame",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = InTheGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.inthegame.InTheGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inthegame.InTheGameBCExample;
+				PRODUCT_NAME = "ITG BC Example";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
