@@ -9,7 +9,9 @@
 import UIKit
 import InTheGameBC
 
-let exampleVideoURL = URL(string: "https://media.inthegame.io/uploads/videos/itgdemo5clips.mp4?123123")!
+let bcPolicyKey = "xxxxxx"
+let bcAccountID = "xxxxxx"
+let bcVideoID = "xxxxxx"
 
 class HomeViewController: UIViewController {
 
@@ -18,7 +20,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openFullscreenVideo(_ sender: Any) {
-        let controller = ITGPlayerViewController.instantiate(videoURL: exampleVideoURL)
+        let controller = ITGBCPlayerViewController.instantiate(videoID: bcVideoID, accountID: bcAccountID, policyKey: bcPolicyKey, broadcasterName: "demos")
         present(controller, animated: true, completion: nil)
     }
 }
