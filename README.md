@@ -43,7 +43,7 @@ If you need a custom configuration when loading the Brightcove player, we includ
 
 Load the player view as:
 ```
-let playerView = ITGBCPlayerView.instantiateManualConfig(videoID: bcVideoID)
+let playerView = ITGBCPlayerView.instantiateManualConfig(videoID: bcVideoID, broadcasterName: <your_itg_broadcaster_name>)
 ```
 And after configuring the player view, add your video code:
 ```
