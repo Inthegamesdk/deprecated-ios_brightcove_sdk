@@ -55,6 +55,29 @@ let service = BCOVPlaybackService(accountId: bcAccountID, policyKey: bcPolicyKey
             }
         })
 ```
+## Overlay mode
+
+The overlay option allows for maximum flexibility - you create a view for the ITG interactive Overlay and position it over your video player as you see fit.
+You can create it as:
+```
+let overlay = ITGOverlayView(videoID: bcVideoID, broadcasterName: <your_itg_broadcaster_name>")
+```
+And you can attach it to your Brightcove player (so that it gets updates on video playback) like this:
+```
+videoController.add(overlay)
+```
+Alternatively, if you don't want to attach it to the player, you can send playback updates manually to the overlay:
+```
+overlay.videoPlaying()
+overlay.videoPaused()
+overlay.videoStopped()
+overlay.updateVideoTime(seconds: 60)
+```
+If you need to detect touches on the video area, you can intercept the touch event and use this method to check if there is overlay content on the touched point:
+```
+let didTouchContent = overlay.hasContentAtPoint(point)
+```
+If using the overlay, you'll need to manage its position so that it fits the video area. You can check the `OverlayExampleViewController` in the example app for an integration sample.
 
 ## Notes
 
