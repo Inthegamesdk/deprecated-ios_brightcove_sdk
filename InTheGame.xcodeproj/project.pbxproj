@@ -13,6 +13,7 @@
 		6DACAF69239FF81D00443D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */; };
 		6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF70239FF86800443D25 /* ExampleViewController.swift */; };
 		6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DACAF71239FF86800443D25 /* HomeViewController.swift */; };
+		6DB38DE3242F78B600CD56DD /* OverlayExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB38DE2242F78B600CD56DD /* OverlayExampleViewController.swift */; };
 		6DFBB70623D8B3CD007A3268 /* InTheGameBC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */; };
 		6DFBB70723D8B3CD007A3268 /* InTheGameBC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DFBB70923D8B666007A3268 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6DFBB70823D8B666007A3268 /* Podfile */; };
@@ -42,6 +43,7 @@
 		6DACAF6A239FF81D00443D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DACAF70239FF86800443D25 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		6DACAF71239FF86800443D25 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6DB38DE2242F78B600CD56DD /* OverlayExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayExampleViewController.swift; sourceTree = "<group>"; };
 		6DFBB70423D8B3C6007A3268 /* InTheGameBC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InTheGameBC.framework; sourceTree = "<group>"; };
 		6DFBB70823D8B666007A3268 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8CAD0035FB1136267EBC572E /* Pods-InTheGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTheGame.release.xcconfig"; path = "Target Support Files/Pods-InTheGame/Pods-InTheGame.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				6DACAF5C239FF81B00443D25 /* AppDelegate.swift */,
 				6DACAF70239FF86800443D25 /* ExampleViewController.swift */,
 				6DACAF71239FF86800443D25 /* HomeViewController.swift */,
+				6DB38DE2242F78B600CD56DD /* OverlayExampleViewController.swift */,
 				6DACAF62239FF81B00443D25 /* Main.storyboard */,
 				6DACAF65239FF81D00443D25 /* Assets.xcassets */,
 				6DACAF67239FF81D00443D25 /* LaunchScreen.storyboard */,
@@ -250,6 +253,7 @@
 			files = (
 				6DACAF73239FF86800443D25 /* HomeViewController.swift in Sources */,
 				6DACAF72239FF86800443D25 /* ExampleViewController.swift in Sources */,
+				6DB38DE3242F78B600CD56DD /* OverlayExampleViewController.swift in Sources */,
 				6DACAF5D239FF81B00443D25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV328K5423;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GV328K5423;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

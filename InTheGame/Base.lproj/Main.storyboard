@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HIf-ik-s7m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HIf-ik-s7m">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +10,7 @@
         <!--IN THE GAME-->
         <scene sceneID="sWN-9d-QNc">
             <objects>
-                <viewController title="IN THE GAME" id="dod-2X-NNo" customClass="HomeViewController" customModule="InTheGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="IN THE GAME" id="dod-2X-NNo" customClass="HomeViewController" customModule="InTheGameBCDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dgB-UZ-wCn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +43,17 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="O0U-XO-Fyw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIv-ZF-Qa5">
+                                <rect key="frame" x="36" y="586" width="342" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RiN-pU-iuB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Overlay integration example"/>
+                                <connections>
+                                    <segue destination="qrA-qt-0sR" kind="show" id="hdp-N5-rSJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -51,9 +61,12 @@
                             <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="ctd-Di-Xch" secondAttribute="leading" id="5n1-oa-Hfd"/>
                             <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="ZrJ-dg-iHX" secondAttribute="leading" constant="36" id="5x5-ix-qQ7"/>
                             <constraint firstItem="7Ym-VQ-YNV" firstAttribute="top" secondItem="XTT-tX-6Ey" secondAttribute="bottom" constant="72" id="8Cl-6p-r6F"/>
+                            <constraint firstItem="aIv-ZF-Qa5" firstAttribute="top" secondItem="ctd-Di-Xch" secondAttribute="bottom" constant="36" id="Hgx-Hk-Gwi"/>
                             <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="7Ym-VQ-YNV" secondAttribute="leading" id="MyT-e2-p3B"/>
                             <constraint firstItem="7Ym-VQ-YNV" firstAttribute="centerY" secondItem="dgB-UZ-wCn" secondAttribute="centerY" priority="200" id="cw5-3d-0qx"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="leading" secondItem="aIv-ZF-Qa5" secondAttribute="leading" id="fuv-GW-luE"/>
                             <constraint firstItem="XTT-tX-6Ey" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZrJ-dg-iHX" secondAttribute="top" constant="16" id="htg-Ot-FTI"/>
+                            <constraint firstItem="XTT-tX-6Ey" firstAttribute="trailing" secondItem="aIv-ZF-Qa5" secondAttribute="trailing" id="ifc-wI-AVL"/>
                             <constraint firstItem="ctd-Di-Xch" firstAttribute="top" secondItem="7Ym-VQ-YNV" secondAttribute="bottom" constant="36" id="w2C-ya-Ghm"/>
                             <constraint firstItem="XTT-tX-6Ey" firstAttribute="trailing" secondItem="ctd-Di-Xch" secondAttribute="trailing" id="wXp-K6-Q2H"/>
                             <constraint firstItem="XTT-tX-6Ey" firstAttribute="centerX" secondItem="dgB-UZ-wCn" secondAttribute="centerX" id="yLz-3g-4ZP"/>
@@ -69,7 +82,7 @@
         <!--Integration example-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Integration example" id="BYZ-38-t0r" customClass="ExampleViewController" customModule="InTheGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Integration example" id="BYZ-38-t0r" customClass="ExampleViewController" customModule="InTheGameBCDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,12 +116,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Integration example" id="IHW-nz-0ND"/>
                     <connections>
-                        <outlet property="videoContainer" destination="mhb-2b-pR7" id="7Dq-DW-9Ee"/>
+                        <outlet property="videoContainer" destination="mhb-2b-pR7" id="5bE-h5-ZMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+            <point key="canvasLocation" x="1048" y="-585"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qbG-W0-PCz">
@@ -128,5 +141,96 @@
             </objects>
             <point key="canvasLocation" x="-1026.0869565217392" y="-300"/>
         </scene>
+        <!--Integration example-->
+        <scene sceneID="A08-MJ-3hn">
+            <objects>
+                <viewController title="Integration example" id="qrA-qt-0sR" customClass="OverlayExampleViewController" customModule="InTheGameBCDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AZZ-Xs-5Lm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEV-fh-Qol">
+                                <rect key="frame" x="8" y="236" width="398" height="224"/>
+                                <color key="backgroundColor" white="0.86237351620000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kEV-fh-Qol" secondAttribute="height" multiplier="16:9" priority="700" id="ZIc-yG-ita"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom integration example with the ITGOverlayView" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eED-43-eiG">
+                                <rect key="frame" x="50" y="560" width="314" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.40075627850000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1V-yP-ljQ">
+                                <rect key="frame" x="129" y="496" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="VpO-HF-AF3"/>
+                                    <constraint firstAttribute="height" constant="32" id="cWI-NU-Eep"/>
+                                </constraints>
+                                <color key="tintColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="play" catalog="system"/>
+                                <connections>
+                                    <action selector="actionPlay:" destination="qrA-qt-0sR" eventType="touchUpInside" id="Yl3-jb-fWt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MO-9G-Izt">
+                                <rect key="frame" x="191" y="496" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="82V-Gz-FDI"/>
+                                    <constraint firstAttribute="width" constant="32" id="Tep-ux-HLI"/>
+                                </constraints>
+                                <color key="tintColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="pause" catalog="system"/>
+                                <connections>
+                                    <action selector="actionPause:" destination="qrA-qt-0sR" eventType="touchUpInside" id="myY-wk-d5t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxh-Zk-7xm">
+                                <rect key="frame" x="253" y="496" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="aoS-Gc-aud"/>
+                                    <constraint firstAttribute="height" constant="32" id="gm8-fa-3rw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.058823529409999999" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="forward" catalog="system"/>
+                                <connections>
+                                    <action selector="actionForward:" destination="qrA-qt-0sR" eventType="touchUpInside" id="A04-hg-khd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.93915881850000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kEV-fh-Qol" secondAttribute="bottom" constant="32" id="0du-qX-0ar"/>
+                            <constraint firstItem="2MO-9G-Izt" firstAttribute="top" secondItem="kEV-fh-Qol" secondAttribute="bottom" constant="36" id="45O-4g-YJM"/>
+                            <constraint firstItem="2MO-9G-Izt" firstAttribute="leading" secondItem="S1V-yP-ljQ" secondAttribute="trailing" constant="30" id="4QX-bV-Gq8"/>
+                            <constraint firstItem="eED-43-eiG" firstAttribute="centerX" secondItem="AZZ-Xs-5Lm" secondAttribute="centerX" id="4dT-pN-gbg"/>
+                            <constraint firstItem="eED-43-eiG" firstAttribute="top" secondItem="kEV-fh-Qol" secondAttribute="bottom" constant="100" id="5cT-XL-bcg"/>
+                            <constraint firstItem="2MO-9G-Izt" firstAttribute="centerY" secondItem="S1V-yP-ljQ" secondAttribute="centerY" id="8zf-Dz-DA6"/>
+                            <constraint firstItem="eED-43-eiG" firstAttribute="leading" secondItem="8gm-TA-mjW" secondAttribute="leading" constant="50" id="PsG-yJ-vcT"/>
+                            <constraint firstItem="kEV-fh-Qol" firstAttribute="centerY" secondItem="AZZ-Xs-5Lm" secondAttribute="centerY" priority="500" constant="-100" id="Ytk-sS-MJJ"/>
+                            <constraint firstItem="kEV-fh-Qol" firstAttribute="width" secondItem="AZZ-Xs-5Lm" secondAttribute="width" constant="-16" id="a3O-et-aSp"/>
+                            <constraint firstItem="2MO-9G-Izt" firstAttribute="centerY" secondItem="Bxh-Zk-7xm" secondAttribute="centerY" id="g62-Q5-I10"/>
+                            <constraint firstItem="2MO-9G-Izt" firstAttribute="centerX" secondItem="AZZ-Xs-5Lm" secondAttribute="centerX" id="j7K-KD-4ty"/>
+                            <constraint firstItem="kEV-fh-Qol" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AZZ-Xs-5Lm" secondAttribute="top" constant="32" id="uFu-US-Oco"/>
+                            <constraint firstItem="kEV-fh-Qol" firstAttribute="centerX" secondItem="AZZ-Xs-5Lm" secondAttribute="centerX" id="urw-kR-Ty8"/>
+                            <constraint firstItem="Bxh-Zk-7xm" firstAttribute="leading" secondItem="2MO-9G-Izt" secondAttribute="trailing" constant="30" id="wFn-cJ-sFR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8gm-TA-mjW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Overlay example" id="9Xs-ql-B5A"/>
+                    <connections>
+                        <outlet property="playerContainer" destination="kEV-fh-Qol" id="2AI-1t-NuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47Q-SE-HjO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="77"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="forward" catalog="system" width="64" height="38"/>
+        <image name="pause" catalog="system" width="44" height="64"/>
+        <image name="play" catalog="system" width="60" height="64"/>
+    </resources>
 </document>
