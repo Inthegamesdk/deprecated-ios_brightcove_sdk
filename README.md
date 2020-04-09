@@ -34,7 +34,8 @@ To load the video channel in a view to fit your custom layout, load the `ITGBCPl
 let playerView = ITGBCPlayerView.instantiate(videoID: bcVideoID, accountID: bcAccountID, policyKey: bcPolicyKey, broadcasterName: <your_itg_broadcaster_name>)
 ```
 
-There are two additional parameters for further configuration: `language` and `allowsFullScreen`.
+There are additional parameters for further configuration: `language`, `allowsFullScreen` and `devMode`.
+You can set `devMode` to true to use the development environment. If not specified, production environment is used as ther default.
 You can run the included project for a pratical implementation example.
 
 ## Manual mode
@@ -73,11 +74,15 @@ overlay.videoPaused()
 overlay.videoStopped()
 overlay.updateVideoTime(seconds: 60)
 ```
-If you need to detect touches on the video area, you can intercept the touch event and use this method to check if there is overlay content on the touched point:
+
+The overlay content will be sized to take the available space while fitting a specified video aspect. The default is the standard 16:9. For other video formats, you can set the aspect ratio as:
 ```
-let didTouchContent = overlay.hasContentAtPoint(point)
+overlay.setAspectRatio(4/3)
 ```
-If using the overlay, you'll need to manage its position so that it fits the video area. You can check the `OverlayExampleViewController` in the example app for an integration sample.
+
+The overlay will only assume touch events when they are over its content. Touches on the empty area will be passed to the next view, useful for video controls.
+
+You can check the `OverlayExampleViewController` in the example app for an integration sample.
 
 ## Notes
 
