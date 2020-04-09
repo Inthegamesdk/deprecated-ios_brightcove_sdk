@@ -35,7 +35,7 @@ let playerView = ITGBCPlayerView.instantiate(videoID: bcVideoID, accountID: bcAc
 ```
 
 There are additional parameters for further configuration: `language`, `allowsFullScreen` and `devMode`.
-You can set `devMode` to true to use the development environment. If not specified, production environment is used as ther default.
+You can set `devMode` to true to use the development environment. If not specified, production environment is used as the default.
 You can run the included project for a pratical implementation example.
 
 ## Manual mode
