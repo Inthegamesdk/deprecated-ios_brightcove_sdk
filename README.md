@@ -7,11 +7,11 @@ To run the example, add your BrightCove info and videoID to the `HomeViewControl
 
 ## Installation
 
-To install, simply drag the **InTheGameBC.framework** file into your project. 
+To install, simply drag the **InTheGameBC.xcframework** file into your project. 
 
 Configure the framework as Embedded on your project target settings:
 
-![](https://i.imgur.com/GsuJVIc.png)
+![](https://i.imgur.com/kC2i1xe.png)
 
 And import the SDK in your code:
 
