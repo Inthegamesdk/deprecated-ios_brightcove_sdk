@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InTheGameBC
 import AVFoundation
 import AVKit
@@ -37,9 +37,9 @@ extension ITGOverlayView : BrightcovePlayerSDK.BCOVPlaybackSessionConsumer {
   @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @objc override dynamic public func didMoveToWindow()
   @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 extension ITGBCPlayerView : BrightcovePlayerSDK.BCOVPlaybackSessionConsumer {
   @objc dynamic public func didAdvance(to session: BrightcovePlayerSDK.BCOVPlaybackSession!)
@@ -53,9 +53,9 @@ extension ITGBCPlayerView : BrightcovePlayerSDK.BCOVPlaybackSessionConsumer {
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc override dynamic public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
-  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ITGPlayerView : UIKit.UIView, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, UIKit.UIGestureRecognizerDelegate {
   public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en", allowsFullScreen: Swift.Bool = true, devMode: Swift.Bool = false) -> InTheGameBC.ITGPlayerView
@@ -64,9 +64,9 @@ extension ITGBCPlayerView : BrightcovePlayerSDK.BCOVPlaybackSessionConsumer {
   @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @objc override dynamic public func didMoveToWindow()
   @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 extension ITGPlayerView : WebKit.WKScriptMessageHandler {
   @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -76,7 +76,7 @@ extension ITGPlayerView : WebKit.WKScriptMessageHandler {
   public class func instantiate(videoURL: Foundation.URL, broadcasterName: Swift.String? = nil, language: Swift.String = "en") -> InTheGameBC.ITGPlayerViewController
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
