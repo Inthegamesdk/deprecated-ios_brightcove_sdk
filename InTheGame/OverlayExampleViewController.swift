@@ -50,6 +50,12 @@ class OverlayExampleViewController: UIViewController {
                 self.videoController.play()
             }
         })
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapVideo))
+        videoController.view.addGestureRecognizer(gesture)
+    }
+    
+    @objc func didTapVideo() {
+        print("DID TAP VIDEO AREA")
     }
     
     func loadOverlay() {
